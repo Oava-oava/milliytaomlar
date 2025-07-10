@@ -1,0 +1,14 @@
+{
+  "name": "milliytaomlar",
+  "version": "1.0.0",
+  "description": "Milliy taomlar sayti",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch sass/main.scss css/style.css"
+  },
+  "author": "Ortiqbek",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}
