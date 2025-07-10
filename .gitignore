@@ -1,0 +1,12 @@
+# Node.js projectlar uchun
+node_modules/
+dist/
+.env
+
+# Sass output
+*.css.map
+
+# OS va editor fayllari
+.DS_Store
+Thumbs.db
+.vscode/
