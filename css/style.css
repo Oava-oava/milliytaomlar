@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Playfair", sans-serif;
+  color: #555;
+}
+
+li {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  opacity: 0.95;
+  backdrop-filter: blur(100px);
+}
+.navbar .nav__logo img {
+  width: 16rem;
+  height: auto;
+}
+.navbar .nav__links {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.navbar .nav__links li a {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #000;
+  width: 40rem;
+  padding: 0.5rem 1rem;
+}
+.navbar .nav__links li a:hover {
+  color: #fff;
+  border-radius: 100px;
+  background-color: #000;
+}
+
+body {
+  margin-block-end: 10rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.container .text-box {
+  max-width: 600px;
+  margin-inline: auto;
+  text-align: center;
+  display: grid;
+}
+.container .text-box h1 {
+  margin-block: 5rem;
+  font-size: 9.6rem;
+  font-weight: 500;
+}
+.container .text-box h2 {
+  margin-block: 5rem;
+  font-size: 5.2rem;
+  font-weight: 900;
+}
+.container .text-box p {
+  font-size: 2.2rem;
+  margin-bottom: 5rem;
+}
+.container .text-box hr {
+  border: 1px solid #999;
+}
+.container .img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2.6rem;
+  gap: 2.5rem;
+}
+.container .img-container .img-box img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.container .img-container .img-box {
+  position: relative;
+  transition: 0.4s ease;
+}
+.container .img-container .img-box::after {
+  content: "O'zbekcha Sushi";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 3rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.container .img-container .img-box:hover::after {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
